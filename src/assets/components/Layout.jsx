@@ -142,7 +142,10 @@ function Layout() {
         gap={0}
       >
         Find my code on
-        <Button href='' sx={{ ml: '0' }}>
+        <Button
+          href='https://github.com/imarunp/Unit_Converter'
+          sx={{ ml: '0' }}
+        >
           <Typography
             fontWeight='500'
             sx={{ color: checked ? '#22223b' : '#f0ebd8' }}
