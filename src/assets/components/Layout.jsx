@@ -26,8 +26,8 @@ function Layout() {
       borderRadius={2}
       sx={{ backgroundColor: checked ? '#fdf0d5' : '#0d1321' }}
       textAlign='center'
-      height='80%'
-      width='40%'
+      // height='80%'
+      // width='40%'
       border='2px solid #22223b '
       pt={1}
     >
