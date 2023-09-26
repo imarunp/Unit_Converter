@@ -36,7 +36,7 @@ function Layout() {
           <Toolbar>
             <IconButton
               sx={{
-                transform: 'scale(1.6)',
+                transform: { xs: 'scale(1.2)', sm: 'scale(1.6)' },
                 color: checked ? '#22223b' : '#f0ebd8',
               }}
             >
@@ -48,7 +48,10 @@ function Layout() {
               m='0 auto'
               variant='h3'
               component='div'
-              sx={{ color: checked ? '' : '#f0ebd8' }}
+              sx={{
+                fontSize: { xs: 14, sm: 18 },
+                color: checked ? '' : '#f0ebd8',
+              }}
             >
               UNIT CONVERTER
             </Typography>
