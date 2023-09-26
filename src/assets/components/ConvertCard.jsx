@@ -18,20 +18,27 @@ function ConvertCard({
         mb: 3,
         ml: ' auto',
         mr: 'auto',
+        borderRight: 15,
+        borderLeft: 15,
+        borderColor: '#f0ebd8',
         textAlign: 'center',
-        minWidth: '50%',
-        maxWidth: '80%',
+        // minWidth: '50%',
+        // maxWidth: '80%',
       }}
     >
       <Typography
-        sx={{ color: checked ? '' : '#f0ebd8' }}
+        sx={{ fontSize: { xs: 14, sm: 18 }, color: checked ? '' : '#f0ebd8' }}
         variant='h6'
         component='div'
       >
         {title}({firstUnit} / {secondUnit})
       </Typography>
       <Typography
-        sx={{ color: checked ? '' : '#f0ebd8', pt: 2 }}
+        sx={{
+          fontSize: { xs: 12, sm: 16 },
+          color: checked ? '' : '#f0ebd8',
+          pt: 2,
+        }}
         variant='body1'
         component='div'
       >

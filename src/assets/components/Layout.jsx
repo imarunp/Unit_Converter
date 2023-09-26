@@ -57,7 +57,7 @@ function Layout() {
             </Typography>
             <IconButton
               sx={{
-                transform: 'scale(1.8)',
+                transform: { xs: 'scale(1.2)', sm: 'scale(1.6)' },
                 color: checked ? '#e07a5f' : '#f0ebd8',
                 display: checked ? 'block' : 'none',
               }}
@@ -66,7 +66,7 @@ function Layout() {
             </IconButton>
             <IconButton
               sx={{
-                transform: 'scale(1.8)',
+                transform: { xs: 'scale(1.2)', sm: 'scale(1.6)' },
                 color: checked ? '#e07a5f' : '#f0ebd8',
                 display: checked ? 'none' : 'block',
               }}
@@ -136,7 +136,7 @@ function Layout() {
         ></ConvertCard>
       </Box>
       <Typography
-        sx={{ color: checked ? '' : '#f0ebd8' }}
+        sx={{ fontSize: { xs: 14, sm: 18 }, color: checked ? '' : '#f0ebd8' }}
         display='flex'
         justifyContent='center'
         alignItems='center'
@@ -151,13 +151,19 @@ function Layout() {
         >
           <Typography
             fontWeight='500'
-            sx={{ color: checked ? '#22223b' : '#f0ebd8' }}
+            sx={{
+              fontSize: { xs: 14, sm: 18 },
+              color: checked ? '#22223b' : '#f0ebd8',
+            }}
             variant='body1'
             component='span'
           >
             GitHub
           </Typography>
-          <IconButton sx={{ color: checked ? '#22223b' : '#f0ebd8' }}>
+          <IconButton
+            size='small'
+            sx={{ color: checked ? '#22223b' : '#f0ebd8' }}
+          >
             <GitHubIcon />
           </IconButton>
         </Button>
